@@ -24,8 +24,8 @@ E_PULSE = 0.0005
 E_DELAY = 0.0005
 
 # Open I2C interface
-# bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
-bus = smbus.SMBus(1)  # Rev 2 Pi uses 1
+bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
+#bus = smbus.SMBus(1)  # Rev 2 Pi uses 1
 
 
 class LCD:
