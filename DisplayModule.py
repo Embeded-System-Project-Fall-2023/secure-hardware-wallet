@@ -2,7 +2,7 @@ import smbus
 import time
 
 # Define some device parameters
-I2C_ADDR = 0x3f  # I2C device address
+I2C_ADDR = 0x27  # I2C device address
 LCD_WIDTH = 16  # Maximum characters per line
 
 # Define some device constants
@@ -24,8 +24,8 @@ E_PULSE = 0.0005
 E_DELAY = 0.0005
 
 # Open I2C interface
-bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
-#bus = smbus.SMBus(1)  # Rev 2 Pi uses 1
+#bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
+bus = smbus.SMBus(1)  # Rev 2 Pi uses 1
 
 
 class LCD:
